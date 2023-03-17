@@ -1,4 +1,4 @@
-# bungee-whitelist
+# proxy-whitelist (Bungee & Velocity)
 Vanilla compactible white list plugin for BungeeCord and Velocity.
 
 用于BungeeCord和Velocity的白名单插件，数据格式兼容原版。

@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id "com.github.johnrengelman.shadow" version "7.1.1"
+    id "com.github.johnrengelman.shadow" version "8.1.0"
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -9,16 +9,16 @@ targetCompatibility = JavaVersion.VERSION_11
 repositories {
     jcenter()
     maven {
-        name 'velocity'
-        url 'https://nexus.velocitypowered.com/repository/maven-public/'
+        name 'Paper-repo'
+        url 'https://repo.papermc.io/repository/maven-public/'
     }
 }
 
 dependencies {
     implementation project(':common')
-    compileOnly 'com.velocitypowered:velocity-api:3.1.0'
-    implementation 'com.google.code.gson:gson:2.8.9'
-    annotationProcessor 'com.velocitypowered:velocity-api:3.1.0'
+    compileOnly 'com.velocitypowered:velocity-api:3.2.0-SNAPSHOT'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.2.0-SNAPSHOT'
 }
 
 shadowJar {
