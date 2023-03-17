@@ -15,7 +15,10 @@ jobs:
         with:
           java-version: 17
           distribution: temurin
-
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Build
+        run: ./gradlew build
       - name: Release Bungeecord-Whitelist
         uses: marvinpinto/action-automatic-releases@latest
         with:
